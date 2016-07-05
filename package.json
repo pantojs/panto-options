@@ -1,0 +1,29 @@
+{
+    "name": "panto-options",
+    "version": "0.1.0",
+    "description": "Options object for panto",
+    "main": "index.js",
+    "scripts": {
+        "test": "eslint index.js && mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pantojs/panto-options.git"
+    },
+    "keywords": [
+        "panto",
+        "options"
+    ],
+    "author": "Yanni Nightingale <yanni4night@gmail.com>",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/pantojs/panto-options/issues"
+    },
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "dependencies": {
+        "define-frozen-property": "^0.1.0",
+        "lodash": "^4.13.1"
+    }
+}
