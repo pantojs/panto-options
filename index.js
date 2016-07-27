@@ -4,13 +4,15 @@
  *
  * changelog
  * 2016-07-05[13:07:33]:revised
+ * 2016-07-27[19:29:35]:support get all
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.1.1
  * @since 0.1.0
  */
 'use strict';
 const extend = require('lodash/extend');
+const cloneDeep = require('lodash/cloneDeep');
 const defineFrozenProperty = require('define-frozen-property');
 
 class Options {
@@ -25,6 +27,9 @@ class Options {
         return key in this._options;
     }
     get(key, defaultValue) {
+        if(!key) {
+            return cloneDeep(this._options);
+        }
         return this.has(key) ? this._options[key] : defaultValue;
     }
     set(key, value) {

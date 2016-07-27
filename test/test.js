@@ -6,7 +6,7 @@
  * 2016-07-05[13:09:24]:revised
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.1.1
  * @since 0.1.0
  */
 'use strict';
@@ -59,6 +59,16 @@ describe('Options', function () {
             assert.deepEqual(o.get('profile'), undefined);
             assert.ok(Number.isNaN(o.get('tag')));
             assert.deepEqual(o.get('name', 'Kate'), 'Kate');
+        });
+        it('should get all', function () {
+            const f = {
+                age: 29
+            };
+            const o = new Options(f);
+            const f1 = o.get();
+            assert.deepEqual(f1, f);
+            f1.age = 30;
+            assert.deepEqual(f.age, 29)
         });
     });
     describe('#rm', function () {

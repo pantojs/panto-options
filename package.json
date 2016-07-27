@@ -1,6 +1,6 @@
 {
     "name": "panto-options",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Options object for panto",
     "main": "index.js",
     "scripts": {

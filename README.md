@@ -15,6 +15,9 @@ options.set('current', 'sub');
 options.get('list')// 'all'
 options.get('absense') // undefined
 options.get('absense', 'foo') // 'foo'
+options.get() // {cwd: 'cwd', list: 'all', current: 'sub'}
+
+options.rm('cwd') //true
 ```
 
 [npm-url]: https://npmjs.org/package/panto-options
