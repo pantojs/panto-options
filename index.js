@@ -7,7 +7,7 @@
  * 2016-07-27[19:29:35]:support get all
  *
  * @author yanni4night@gmail.com
- * @version 0.1.1
+ * @version 0.1.2
  * @since 0.1.0
  */
 'use strict';

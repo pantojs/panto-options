@@ -1,6 +1,6 @@
 {
   "name": "panto-options",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Options object for panto",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "define-frozen-property": "^0.1.0",
-    "lodash": "^4.13.1"
+    "lodash": "^4.16.4"
   },
   "devDependencies": {
     "pre-commit": "^1.1.3"
